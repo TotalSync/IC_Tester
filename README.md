@@ -7,3 +7,8 @@ A smart IC tester is far more capable and better than a generic IC Tester, it ha
 IC Testers maybe costly instrumentation devices but this one is just under ₹1600(~$22), pretty cheap right?
 
 For full instructions on how to make your own Smart IC tester follow [instructables article](https://www.instructables.com/Smart-IC-Tester/).
+
+Edit: I decided to expand upon what akshaybaweja had created adding more functionality and integration for small EEPROM programming. I also intend to expand the provided database file with smaller package ICs. I also fixed some of the code regarding how the SD card works nad intgrates into the Arduino Mega. Perhaps because the Mega that I own is not made by arduino directly, there could be some compatability issues.
+
+
+--Ian Green
