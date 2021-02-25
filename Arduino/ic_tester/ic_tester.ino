@@ -83,6 +83,8 @@ typedef struct {
   String name;
 } IC;
 
+
+
 //Function Headers ----- Old -----
 boolean testIC(String buffer, int pins);
 void autoSearchResult(int mode, String number = "", String name = "", int count = 0);
