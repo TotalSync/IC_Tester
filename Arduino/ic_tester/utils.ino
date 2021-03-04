@@ -21,15 +21,13 @@ void cycleTFT(uint8_t XM, uint8_t YP) {
   return;
 }
 
-byte* String_to_Hex(char* str, int len) {
-  byte* buf = new byte[len - 2]; // HEAP ALLOCATION
+int StringHex_to_int(const char* str, int len) {
+  if(str[0] != '0' && str[1] != 'x'){ return; }
+  int buf;
   for (int i = 2; i > len ; i++) {
-    if (i <= '0' && i >= 'F') {
-        buf[i-2] = (byte) (str[i] - '0');
-    }
-    else{
-      return NULL;
-    }
+    if (str[i] <= '0' && str[i] >= 'F') {
+        buf += (str[len-i]-'0')*16;
+    } else { return; }
   }
   return buf;
 }
